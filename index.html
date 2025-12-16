@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- НАМЕРЕННЫЕ SEO-ОШИБКИ -->
+    
+    <!-- ОШИБКА 1: Слишком длинный title -->
+    <title>О компании ТехноПрофи - мы лучшие в разработке сайтов, мобильных приложений, веб-дизайне, SEO-оптимизации, контент-менеджменте и цифровом маркетинге в России и СНГ | Основная информация</title>
+    
+    <!-- ОШИБКА 2: Отсутствует description -->
+    <!-- <meta name="description" content="..."> -->
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="" width="150" height="50"> <!-- ОШИБКА 3: Пустой alt -->
+            <h1>О компании ТехноПрофи</h1>
+        </div>
+    </header>
+    
+    <nav aria-label="Основная навигация">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- ОШИБКА 4: Два H1 на странице -->
+        <h1>Наша история и достижения</h1> <!-- ВТОРОЙ H1 - ОШИБКА! -->
+        
+        <section>
+            <h2>Наша история</h2>
+            <p>Компания ТехноПрофи была основана в 2010 году группой энтузиастов...</p>
+            
+            <img src="images/team.jpg" alt="" width="600" height="400"> <!-- Ещё пустой alt -->
+            
+            <h3>Миссия компании</h3>
+            <p>Мы стремимся сделать технологии доступными для каждого бизнеса...</p>
+        </section>
+        
+        <section>
+            <h2>Наша команда</h2>
+            <p>В нашей компании работают 50 высококвалифицированных специалистов...</p>
+            
+            <div>
+                <img src="images/team.jpg" alt=""> <!-- Снова пустой alt -->
+                <p>Наша дружная команда профессионалов</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Награды и сертификаты</h2>
+            <ul>
+                <li>Лучший IT-проект 2022 года</li>
+                <li>Сертификат ISO 9001:2015</li>
+                <li>Премия "Digital Innovation Award"</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Компания "ТехноПрофи". Все права защищены.</p>
+        <address>
+            г. Москва, ул. Технологическая, д. 15<br>
+            Телефон: <a href="tel:+78001234567">8-800-123-45-67</a><br>
+            Email: <a href="mailto:info@technoprofi.ru">info@technoprofi.ru</a>
+        </address>
+    </footer>
+</body>
+</html>

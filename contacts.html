@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Контакты | ТехноПрофи</title>
+    <meta name="description" content="Контактная информация компании ТехноПрофи. Свяжитесь с нами для обсуждения вашего проекта.">
+    
+    <!-- ОШИБКА: Неправильный порядок мета-тегов -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" content="контакты, связаться, обратная связь"> <!-- keywords после link -->
+    
+    <style>
+        /* Встроенные стили - не ошибка, но лучше выносить в отдельный файл */
+        .contact-info { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип ТехноПрофи" width="150" height="50">
+            <h1>Контакты компании ТехноПрофи</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <!-- ОШИБКА: Нет aria-label для навигации -->
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Свяжитесь с нами</h2>
+            
+            <!-- ОШИБКА: H2 сразу после H1 - нарушение иерархии -->
+            <h3>Основные контакты</h3>
+            <p>Мы всегда рады ответить на ваши вопросы:</p>
+            
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> г. Москва, ул. Технологическая, д. 15, офис 304</p>
+                <p><strong>Телефон:</strong> <a href="tel:+78001234567">8-800-123-45-67</a> (бесплатно по России)</p>
+                <p><strong>Email:</strong> <a href="mailto:info@technoprofi.ru">info@technoprofi.ru</a></p>
+                <p><strong>Время работы:</strong> Пн-Пт: 9:00-18:00</p>
+            </div>
+            
+            <h3>Отдел продаж</h3>
+            <p>Для коммерческих предложений:</p>
+            <p>Email: <a href="mailto:sales@technoprofi.ru">sales@technoprofi.ru</a></p>
+            
+            <h3>Техническая поддержка</h3>
+            <p>Для клиентов по техническим вопросам:</p>
+            <p>Email: <a href="mailto:support@technoprofi.ru">support@technoprofi.ru</a></p>
+            
+            <!-- ОШИБКА: Изображение без указания размеров -->
+            <img src="images/office.jpg" alt="Офис компании ТехноПрофи">
+        </section>
+        
+        <section>
+            <h2>Форма обратной связи</h2>
+            <form>
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Компания "ТехноПрофи". Все права защищены.</p>
+        <p>ИНН: 1234567890 | ОГРН: 1234567890123</p>
+        <!-- ОШИБКА: Ссылки без атрибута title -->
+        <p>
+            <a href="#">Политика конфиденциальности</a> | 
+            <a href="#">Пользовательское соглашение</a>
+        </p>
+    </footer>
+</body>
+</html>
